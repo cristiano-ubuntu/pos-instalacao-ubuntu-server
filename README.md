@@ -17,15 +17,15 @@
 
 2. Faça o download do script. Você pode usar o comando wget para fazer isso:
 
-wget https://github.com/cristiano-ubuntu/pos-instalacao-ubuntu-server/raw/main/script.sh
+   wget https://github.com/cristiano-ubuntu/pos-instalacao-ubuntu-server/raw/main/script.sh
 
 3. Depois de baixar o script, você deve conceder permissão de execução a ele:
 
-**chmod +x script.sh**
+   **chmod +x script.sh**
 
 4. Agora você pode executar o script usando o seguinte comando:
 
-**./script.sh**
+   **./script.sh**
 
 Isso executará o script e iniciará o processo de instalação e configuração das ferramentas mencionadas no script.
 Certifique-se de que você tenha os privilégios adequados para executar esses comandos, especialmente quando estiver instalando e configurando o Docker, pois isso pode exigir privilégios de superusuário (root).
