@@ -1,4 +1,4 @@
-** pos-instalacao-ubuntu-server **
+**pos-instalacao-ubuntu-server**
 # Este script realiza as tarefas:
 
 - Cria um script chamado **atualiza.sh** na pasta **/bin** e defina as permissões de execução para esse novo script;
