@@ -22,7 +22,8 @@ systemctl status docker
 systemctl start docker
 systemctl enable docker
 groupadd docker
-usermod -aG docker $USER
+#usermod -aG docker $USER
+usermod -aG docker cristiano
 
 # Instalação do Composer
 echo "Instalando o Composer..."
