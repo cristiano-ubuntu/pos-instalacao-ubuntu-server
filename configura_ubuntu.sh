@@ -41,15 +41,15 @@ sudo apt install firefox -y
 # Instalar e configurar o LightDM
 sudo apt install lightdm -y
 
-echo "Movendo 50-unity-greeter.conf para 50-unity-greeter.conf.old..."
+# Movendo 50-unity-greeter.conf para 50-unity-greeter.conf.old...
 sudo mv /usr/share/lightdm/lightdm.conf.d/50-unity-greeter.conf /usr/share/lightdm/lightdm.conf.d/50-unity-greeter.conf.old
 
-echo "Editando 50-xfce-greeter.conf..."
-sudo tee /usr/share/lightdm/lightdm.conf.d/50-xfce-greeter.conf <<EOL
-[SeatDefaults]
+# Editando 50-xfce-greeter.conf...
+echo '[SeatDefaults]
 greeter-session=unity-greeter
-user-session=xfce
+user-session=xfce' | sudo tee /usr/share/lightdm/lightdm.conf.d/50-xfce-greeter.conf
 
+# Espera 10 segundos para reiniciar o sistema
 sleep 10
 
 # Reiniciar o sistema
