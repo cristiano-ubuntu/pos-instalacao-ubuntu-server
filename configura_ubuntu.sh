@@ -14,7 +14,6 @@ mkdir ~/.local/bin
 export PATH="$HOME/.local/bin:$PATH"
 
 # Criar o script 'atualiza' em /.local/bin
-echo "Criando o script 'atualiza' em /.local/bin..."
 sudo echo "sudo apt-get update && apt-get upgrade && apt-get dist-upgrade && apt-get autoremove && apt-get autoclean && apt-get clean" > ~/.local/bin/atualiza
 chmod +x ~/.local/bin/atualiza
 
