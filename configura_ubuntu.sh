@@ -5,12 +5,15 @@ sudo apt update -y
 
 # Instalar pacotes
 sudo apt install xorg xfce4 xfce4-terminal -y
-sudo apt install python3 python3-pip zip git ffmpeg thunar-archive-plugin -y
+sudo apt install nano mousepad python3 python3-pip zip git ffmpeg thunar-archive-plugin -y
 
 # Cria a pasta /.local/bin
 mkdir ~/.local/bin
 
-# Criar o script 'atualiza'
+# Adicionando o diretório /.local/bin à variável de ambiente PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+# Criar o script 'atualiza' em /.local/bin
 echo "Criando o script 'atualiza' em /.local/bin..."
 sudo echo "sudo apt-get update && apt-get upgrade && apt-get dist-upgrade && apt-get autoremove && apt-get autoclean && apt-get clean" > ~/.local/bin/atualiza
 chmod +x ~/.local/bin/atualiza
