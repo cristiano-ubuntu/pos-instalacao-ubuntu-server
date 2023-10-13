@@ -5,7 +5,7 @@ sudo apt update -y
 
 # Instalar pacotes
 sudo apt install xorg xfce4 xfce4-terminal -y
-sudo apt install nano mousepad python3 python3-pip zip git ffmpeg thunar-archive-plugin -y
+sudo apt install nano mousepad python3 python3-pip zip git ffmpeg xfce4-goodies -y
 
 # Cria a pasta /.local/bin
 mkdir ~/.local/bin
