@@ -15,6 +15,15 @@ echo 'sudo apt-get update && apt-get upgrade && apt-get dist-upgrade && apt-get 
 # Dá permissão de execução ao script atualiza
 chmod +x /usr/local/bin/atualiza
 
+# Adiciona o repositório PPA do Grub Customizer
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+
+# Atualiza os repositório já com o do Grub Customizer
+sudo apt update -y
+
+# Instala o Grub Customizer
+sudo apt install grub-customizer -y
+
 # Adiciona o repositório PPA do Mozilla Team
 sudo add-apt-repository ppa:mozillateam/ppa -y
 
@@ -29,7 +38,7 @@ Pin-Priority: -1' | sudo tee /etc/apt/preferences.d/mozillateamppa
 # Configura atualizações automáticas
 echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
 
-# Atualiza os repositórios
+# Atualiza os repositórios já com o do Firefox
 sudo apt update -y
 
 # Instala o Firefox
