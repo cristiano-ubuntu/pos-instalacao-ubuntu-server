@@ -5,7 +5,7 @@ sudo apt update -y
 
 # Instalar pacotes
 sudo apt install xorg xserver-xorg-input-synaptics xfce4 xfce4-terminal -y
-sudo apt install nano mousepad python3 python3-pip git xarchiver policykit-1-gnome catfish ffmpeg thunar-archive-plugin whisker-menu smplayer audacious libreoffice gvfs gvfs-backends policykit-1 udisks2 rar unrar zip unzip simplescreenrecorder -y
+sudo apt install nano mousepad python3 python3-pip xarchiver policykit-1-gnome catfish ffmpeg thunar-archive-plugin whisker-menu smplayer audacious libreoffice gvfs gvfs-backends policykit-1 udisks2 rar unrar zip unzip simplescreenrecorder -y
 
 # Criar o script 'atualiza' em /usr/local/bin/
 sudo echo "sudo apt-get update && apt-get upgrade && apt-get dist-upgrade && apt-get autoremove && apt-get autoclean && apt-get clean" > /usr/local/bin/atualiza
