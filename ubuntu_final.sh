@@ -16,7 +16,7 @@ echo 'apt-get update && apt-get upgrade && apt-get dist-upgrade && apt-get autor
 chmod +x /usr/local/bin/atualiza
 
 # Adiciona o repositório PPA do Grub Customizer
-sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer/ppa -y
 
 # Atualiza os repositório já com o do Grub Customizer
 sudo apt update -y
