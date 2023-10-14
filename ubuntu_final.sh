@@ -5,7 +5,7 @@ sudo apt update -y
 
 # Instalar pacotes
 sudo apt install xorg xfce4 xfce4-terminal -y
-sudo apt install nano mousepad python3 python3-pip xarchiver catfish ffmpeg thunar-archive-plugin xfce4-whiskermenu-plugin smplayer audacious libreoffice gvfs gvfs-backends policykit-1 udisks2 rar unrar zip unzip simplescreenrecorder -y
+sudo apt install nano mousepad python3 python3-pip xarchiver catfish ffmpeg thunar-archive-plugin xfce4-whiskermenu-plugin alacarte smplayer audacious libreoffice gvfs gvfs-backends policykit-1 udisks2 rar unrar zip unzip simplescreenrecorder -y
 
 # sudo apt install  policykit-1-gnome -y - comentei pq na linha de cima já instala o policykit-1
 
