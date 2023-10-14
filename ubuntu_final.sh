@@ -10,7 +10,9 @@ sudo apt install nano mousepad python3 python3-pip xarchiver catfish ffmpeg thun
 # sudo apt install  policykit-1-gnome -y - comentei pq na linha de cima já instala o policykit-1
 
 # Criar o script 'atualiza' em /usr/local/bin/
-sudo echo "sudo apt-get update && apt-get upgrade && apt-get dist-upgrade && apt-get autoremove && apt-get autoclean && apt-get clean" > /usr/local/bin/atualiza
+echo 'sudo apt-get update && apt-get upgrade && apt-get dist-upgrade && apt-get autoremove && apt-get autoclean && apt-get clean' | sudo tee /usr/local/bin/atualiza
+
+# Dá permissão de execução ao script atualiza
 chmod +x /usr/local/bin/atualiza
 
 # Adiciona o repositório PPA do Mozilla Team
