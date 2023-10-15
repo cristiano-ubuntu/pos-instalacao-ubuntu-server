@@ -9,11 +9,14 @@ sudo apt install nano mousepad python3 python3-pip xarchiver catfish ffmpeg thun
 
 # sudo apt install  policykit-1-gnome -y - comentei pq na linha de cima já instala o policykit-1
 
+# Cria a pasta /bin
+mkdir /home/leo/bin
+
 # Criar o script 'atualiza' em /usr/local/bin/
-echo 'apt-get update && apt-get upgrade && apt-get dist-upgrade && apt-get autoremove && apt-get autoclean && apt-get clean' | sudo tee /usr/local/bin/atualiza
+echo 'apt-get update && apt-get upgrade && apt-get dist-upgrade && apt-get autoremove && apt-get autoclean && apt-get clean' | sudo tee /usr/bin/atualiza
 
 # Dá permissão de execução ao script atualiza
-chmod +x /usr/local/bin/atualiza
+sudo chmod +x /usr/bin/atualiza
 
 # Adiciona o repositório PPA do Grub Customizer
 sudo add-apt-repository ppa:danielrichter2007/grub-customizer/ppa -y
