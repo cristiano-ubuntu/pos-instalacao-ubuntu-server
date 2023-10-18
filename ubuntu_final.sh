@@ -64,6 +64,7 @@ user-session=xfce' | sudo tee /usr/share/lightdm/lightdm.conf.d/50-xfce-greeter.
 # Espera 10 segundos
 sleep 10
 
+# Instala o lightdm-gtk-greeter-settings
 sudo apt install lightdm-gtk-greeter-settings -y
 
 # Espera 10 segundos para reiniciar o sistema
