@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Atualizar pacotes
-sudo apt update -y
+sudo apt update
 
 # Instalar pacotes
 sudo apt install xorg xfce4 xfce4-terminal -y
@@ -25,7 +25,7 @@ sudo chmod +x /.local/bin/atualizar
 sudo add-apt-repository ppa:danielrichter2007/grub-customizer/ppa -y
 
 # Atualiza os repositório já com o do Grub Customizer
-sudo apt update -y
+sudo apt update
 
 # Instala o Grub Customizer
 sudo apt install grub-customizer -y
@@ -45,7 +45,7 @@ Pin-Priority: -1' | sudo tee /etc/apt/preferences.d/mozillateamppa
 echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
 
 # Atualiza os repositórios já com o do Firefox
-sudo apt update -y
+sudo apt update
 
 # Instala o Firefox
 sudo apt install firefox -y
@@ -60,6 +60,11 @@ sudo mv /usr/share/lightdm/lightdm.conf.d/50-unity-greeter.conf /usr/share/light
 echo '[SeatDefaults]
 greeter-session=unity-greeter
 user-session=xfce' | sudo tee /usr/share/lightdm/lightdm.conf.d/50-xfce-greeter.conf
+
+# Espera 10 segundos
+sleep 10
+
+sudo apt install lightdm-gtk-greeter-settings -y
 
 # Espera 10 segundos para reiniciar o sistema
 sleep 10
